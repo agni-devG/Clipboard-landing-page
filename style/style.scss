@@ -1,6 +1,40 @@
 @import 'variables';
 @import 'global';
 
-body{
-    background-color: beige;
+header{
+    background: url(../images/bg-header-desktop.png)no-repeat top;
+    background-size: 100%;
+    text-align: center;
+    padding: 100px 390px;
+    .logo{
+        max-width:115px ;
+        margin-left:  auto;
+        margin-right:  auto;
+    }
+    div{
+        margin-bottom: 30px;
+    }
+}
+
+main{
+    .benifits{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 50px;
+        margin-bottom: 100px;
+        .benifits-text{
+            padding: 30px 215px 30px 30px;
+            .head{margin-bottom: 0;}            
+            .text{
+                line-height: 37px;
+            }
+        }
+        .benifits-img{
+            position: relative;
+            img{
+                position: absolute;
+                left: -30px;
+            }
+        }
+    }
 }

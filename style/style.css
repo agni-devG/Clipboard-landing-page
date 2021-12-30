@@ -1,4 +1,108 @@
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  font-size: 18px;
+}
+
 body {
-  background-color: beige;
+  font-family: "Bai Jamjuree", sans-serif;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.head {
+  color: #4c545d;
+}
+
+.text {
+  color: #9fabb2;
+}
+
+.btn {
+  border: none;
+  border-radius: 30px;
+  padding: 15px 45px;
+  color: #4c545d;
+  font-family: "Bai Jamjuree", sans-serif;
+  margin-right: 15px;
+  font-weight: 600;
+  color: white;
+  cursor: pointer;
+  -webkit-transition: 150ms ease-in-out all;
+  transition: 150ms ease-in-out all;
+}
+
+.btn:hover {
+  opacity: .7;
+}
+
+.btn-cyan {
+  background-color: #26baa4;
+  -webkit-box-shadow: 4px 10px 14px 0px  #26baa46b;
+          box-shadow: 4px 10px 14px 0px  #26baa46b;
+}
+
+.btn-blue {
+  background-color: #6173ff;
+  -webkit-box-shadow: 4px 10px 14px 0px #6173ff6b;
+          box-shadow: 4px 10px 14px 0px #6173ff6b;
+}
+
+header {
+  background: url(../images/bg-header-desktop.png) no-repeat top;
+  background-size: 100%;
+  text-align: center;
+  padding: 100px 390px;
+}
+
+header .logo {
+  max-width: 115px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header div {
+  margin-bottom: 30px;
+}
+
+main .benifits {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  grid-gap: 50px;
+  margin-bottom: 100px;
+}
+
+main .benifits .benifits-text {
+  padding: 30px 215px 30px 30px;
+}
+
+main .benifits .benifits-text .head {
+  margin-bottom: 0;
+}
+
+main .benifits .benifits-text .text {
+  line-height: 37px;
+}
+
+main .benifits .benifits-img {
+  position: relative;
+}
+
+main .benifits .benifits-img img {
+  position: absolute;
+  left: -30px;
 }
 /*# sourceMappingURL=style.css.map */
